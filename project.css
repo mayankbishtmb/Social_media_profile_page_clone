@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.cover-photo {
+    width: 100%;
+    height: 300px;
+    background: url('https://img.freepik.com/free-photo/summer-background-sea-water_64049-160.jpg?t=st=1735024502~exp=1735028102~hmac=112be9758c1c261bd39e514ed98917e0ceb1c874f2b3458396586525c0242a2a&w=996') no-repeat center center/cover;
+    position: relative;
+}
+
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    bottom: -60px;
+    left: 20px;
+    background: url('https://politics.princeton.edu/sites/default/files/styles/square/public/images/p-5.jpeg?h=87dbaab7&itok=ub6jAL5Qhttps://politics.princeton.edu/sites/default/files/styles/square/public/images/p-5.jpeg?h=87dbaab7&itok=ub6jAL5Q') no-repeat center center/cover;
+}
+
+.profile-info {
+    padding: 80px 20px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.profile-info h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post .post-content {
+    padding: 15px;
+}
+
+.post .post-content h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.post .post-content p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.like-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.like-button:hover {
+    background-color: #0056b3;
+}
+
+.like-button.liked {
+    background-color: #28a745;
+}
+
+.message-box {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.message-box textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+}
+
+.message-box button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.message-box .send-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.message-box .clear-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+.friend-matrix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Adjust the number (4) to the desired number of friends per row */
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.friends-container {
+    display: flex ; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.friend img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}

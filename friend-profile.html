@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Profile Page</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Memberstack</div>
+        <nav>
+            <!-- <a href="feed.html">Feed</a>
+            <a href="#friends">Friends</a> -->
+            <a href="#posts">Posts</a>
+        </nav>
+    </header>
+
+    <div class="cover-photo">
+        
+        <div class="profile-picture"></div>
+    </div>
+
+    <div class="profile-info">
+        <h1>Brynsteinn Sívarsson</h1>
+        <p>I'm an Icelandic dude who loves taking pictures of nature. But you know what I love even more than nature? Memberstack + Webflow. They rock.</p>
+        <p><strong>Joined:</strong> January 2023</p>
+        <button class="like-button" onclick="toggleMessageBox()">Message</button>
+    </div>
+
+    <div class="message-box" id="messageBox">
+        <textarea id="messageText" placeholder="Write your message here..."></textarea>
+        <button class="send-button" onclick="sendMessage()">Send Message</button>
+        <button class="clear-button" onclick="clearMessage()">Clear Message</button>
+    </div>
+
+    <div id="posts" class="posts">
+        <div id="post1" class="post">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZmWhZTanXdipCkIRJh-T0g64WZ7cKVpgbQA&s" alt="Scenic Church">
+            <div class="post-content">
+                <h2>Taj Mahal</h2>
+                <p>Majestic marble masterpiece, eternal love, enchanting symbol of India's heritage.</p>
+                <button class="like-button" onclick="likePost(this)">Like</button>
+            </div>
+        </div>
+        <div id="post4" class="post">
+            <img src="https://m.media-amazon.com/images/I/81sQ6zZuCwL.jpg" alt="Ocean View">
+            <div class="post-content">
+                <h2>Radha and Krishna </h2>
+                <p>Divine love, eternal bond, Radha Krishna in bliss.</p>
+                <button class="like-button" onclick="likePost(this)">Like</button>
+            </div>
+        </div>
+        <div id="post5" class="post">
+            <img src="https://media.istockphoto.com/id/180699358/photo/peacock.jpg?s=612x612&w=0&k=20&c=10hdZK3_qCEWp4-cPm4cXFBVXm2GxOS1nXYZB8kmYBQ=" alt="Cityscape">
+            <div class="post-content">
+                <h2>Peacock</h2>
+                <p>Vibrant feathers, graceful dance, nature's elegant, majestic beauty.</p>
+                <button class="like-button" onclick="likePost(this)">Like</button>
+            </div>
+        </div>
+        <div id="post6" class="post">
+            <img src="https://images.pexels.com/photos/1563256/pexels-photo-1563256.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Forest Trail">
+            <div class="post-content">
+                <h2>Norway Street</h2>
+                <p>Charming pathways, scenic views, Norway streets enchant with beauty.
+                </p>
+                <button class="like-button" onclick="likePost(this)">Like</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div id="friends" class="friends-section">
+        <h2>Friends</h2>
+        <div class="friends-grid">
+            <div class="friend">
+                <a href="friend-profile.html">
+                    <img src="https://politics.princeton.edu/sites/default/files/styles/square/public/images/p-5.jpeg?h=87dbaab7&itok=ub6jAL5Q" alt="Friend Profile">
+                </a>
+            </div>
+        </div>
+    </div> -->
+    
+           
+    <footer>
+        &copy; 2024 Memberstack.
+    </footer>
+
+    <script src="project.js"></script>
+</body>
+</html>
